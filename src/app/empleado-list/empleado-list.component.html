@@ -1,0 +1,23 @@
+<h2>Lista de Empleados</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Id Servicio</th>
+            <th>Detalles</th>
+        </tr>
+    </thead>
+    <tr *ngFor = "let empleado of empleados"> 
+        <td>{{empleado.id}}</td>
+        <td>{{empleado.nombre}}</td>
+        <td>{{empleado.apellidos}}</td>
+        <td>{{empleado.idServicio}}</td>
+
+        <td>
+            <button (click) = "empleadoDetails(empleado.id)" class="btn btn-info">Detalles</button>
+        </td>
+    </tr>
+
+</table>

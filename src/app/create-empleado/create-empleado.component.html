@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Crear Empleado</h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label>Usuario Identificador</label>
+            <input type="text" class="form-control" id="id"
+            [(ngModel)] = "empleado.id" name="id">
+        </div>
+        <div class="form-group">
+            <label>Nombres</label>
+            <input type="text" class="form-control" id="nombre"
+            [(ngModel)] = "empleado.nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label>Apellidos</label>
+            <input type="text" class="form-control" id="apellidos"
+            [(ngModel)] = "empleado.apellidos" name="apellidos">
+        </div>
+        <div class="form-group">
+            <label>Fecha Inicio</label>
+            <input type="datetime-local" class="form-control" id="fechaInicio"
+            [(ngModel)] = "empleado.fechaInicio" name="fechaInicio">
+        </div>
+        <div class="form-group">
+            <label>Fecha Fin</label>
+            <input type="datetime-local" class="form-control" id="fechaFin"
+            [(ngModel)] = "empleado.fechaFin" name="fechaFin">
+        </div>
+        <div class="form-group">
+            <label>Identificador del Servicio</label>
+            <input type="text" class="form-control" id="idServicio"
+            [(ngModel)] = "empleado.idServicio" name="idServicio">
+        </div>
+        <button class="btn btn-success" type="submit">Guardar</button>
+    </form>
+</div>
